@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>玩家医疗—会员登录</title>
+  <link rel="stylesheet" type="text/css" href="./css/login.css">
+  <script type="text/javascript" src='./js/jquery.js'></script>
+</head>
+
+<body>
+  <div class="loginTop">
+    <div class="loginTop-center">
+      <div class="loginTop-left">
+        <span>会员登录</span>
+      </div>
+      <div class="loginTop-right">
+        <span>服务热线：</span><span>400-1028-120</span>
+      </div>
+    </div>
+  </div>
+  <div class="loginContent">
+    <div class="loginContent-center">
+      <div class="log_in">
+        <div class="log_in-title">密码登录</div>
+        <form action="" id="login-form">
+          <span class="denglu-img"><img src="./images/login/denglu.png" alt="" width='25px' height='25px'></span>
+          <input type="text" placeholder="用户名" class="username">
+          <span class="mima-img"><img src="./images/login/mima.png" alt="" width='25px' height='25px'></span>
+          <input type="password" placeholder="账户密码" class="password">
+          <input type="text" class="showword" style="display: none;">
+          <span class="xsmm-img"><img src="./images/login/xsmm.png" alt=""></span>
+          <input type="checkbox"><span style="color: #555;font-size: 14px; margin-left: 15px;">记住账户名</span>
+          <p>
+            <input type="submit" value="登录">
+          </p>
+          <span class="login-span"><a href="register.html">立即注册</a></span><span class="login-span">|</span><span class="login-span">忘记密码</span>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="loginBottom">版权所有： 平安万家医疗投资管理有限责任公司 粤ICP备16081915号 互联网药品信息服务资格证书 (粤)-非经营性-2016-0317</div>
+</body>
+<script type="text/javascript">
+$('.loginTop-left').click(function() {
+  window.location.href = "index.html";
+})
+$('.xsmm-img').mousedown(function() {
+  var val = $('.password').attr('value');
+  if (val == '') {
+    $('.showword').attr({ 'value': val });
+  } else {
+    $('.password').hide();
+    $('.showword').attr({ 'value': val }).show();
+  }
+})
+$('.xsmm-img').mouseup(function() {
+  var val = $('.showword').attr('value');
+  $('.showword').hide();
+  $('.password').attr({ 'value': val }).show();
+})
+</script>
+
+</html>

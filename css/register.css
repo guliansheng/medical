@@ -1,0 +1,243 @@
+body,
+ul,
+li,
+img,
+span {
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: yy;
+  src: url('../font/汉仪丫丫体简.ttf');
+}
+
+body {
+  font-family: 微软雅黑;
+}
+
+body {
+  background: #fff;
+}
+
+input {
+  background: transparent;
+}
+
+.registerTop {
+  height: 80px;
+  width: 100%;
+}
+
+.registerTop-center {
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.registerTop-left {
+  width: 200px;
+  height: 26px;
+  padding-top: 27px;
+  float: left;
+  background: url('../images/login/wanjia-logo.png') no-repeat;
+  background-position: 0 27px;
+}
+
+.registerTop-left:hover {
+  cursor: pointer;
+}
+
+.registerTop-left span {
+  font-size: 20px;
+  float: right;
+  color: #333;
+}
+
+.header {
+  width: 100%;
+  height: 35px;
+  background: #eee;
+}
+
+.header a {
+  color: #777;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #ff8e42;
+}
+
+.header-container {
+  width: 1200px;
+  height: 35px;
+  margin: 0 auto;
+}
+
+.header-left {
+  width: 200px;
+  height: 35px;
+  float: left;
+}
+
+.header-right {
+  width: 290px;
+  height: 35px;
+  float: right;
+  position: relative;
+}
+
+.header-left ul li,
+.header-right ul li {
+  list-style: none;
+  float: left;
+  line-height: 35px;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #777;
+}
+
+.header i {
+  width: 13px;
+  height: 12px;
+  overflow: hidden;
+  position: absolute;
+  top: 11px;
+  left: -8px;
+}
+
+.header i img {
+  position: absolute;
+  top: -26px;
+}
+
+.registerCenter {
+  width: 380px;
+  height: 420px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+  margin: 8px 0;
+  padding-left: 60px;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus {
+  box-shadow: 0px 0px 1px 1px #ff9913;
+}
+
+#register-form {
+  position: relative;
+}
+
+.error {
+  color: #ef5555;
+  font-size: 13px;
+  width: 344px;
+  height: 25px;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  background: #ffebeb url('../images/register/close.png') no-repeat 8px 4px;
+  background-size: 18px 18px;
+  border: 1px solid #ef5555;
+  line-height: 25px;
+  padding-left: 34px;
+  display: none;
+}
+
+input[type=submit] {
+  width: 100%;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin: 10px 0;
+  background: #ff9913;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background: #ff8813;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 18px;
+}
+
+.yanzheng {
+  width: 80px;
+  height: 28px;
+  background: url('../images/register/bg-0273.jpg');
+  position: absolute;
+  top: 78px;
+  left: 280px;
+  border-radius: 4px;
+}
+
+.codechange {
+  width: 80px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: #444;
+  cursor: pointer;
+  font-family: yy;
+}
+
+.shouji-img {
+  top: 18px;
+}
+
+.yanzheng1-img {
+  top: 80px;
+}
+
+.yanzheng2-img {
+  top: 140px;
+}
+
+.mima-img {
+  top: 200px;
+}
+
+.checkbox-next {
+  font-size: 12px;
+  color: #555;
+  margin-left: 8px;
+}
+
+.checkbox-next a {
+  text-decoration: none;
+  color: #2273c9;
+}
+
+.loginBottom {
+  width: 1200px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  color: #777;
+  border-top: 1px solid #ccc;
+}

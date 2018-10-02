@@ -1,0 +1,38 @@
+.Carousel {
+  width: 960px;
+  height: 360px;
+  background: #ccc;
+  position: absolute;
+  cursor: pointer;
+  margin-left: 240px;
+}
+
+.Carousel-img {
+  width: 100%;
+  height: 360px;
+  background: rgb(142, 204, 215);
+}
+
+.Carousel-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Carousel-dot ul {
+  width: 110px;
+  height: 12px;
+  position: absolute;
+  bottom: 25px;
+  left: 460px;
+}
+
+.Carousel-dot li {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  float: left;
+  list-style: none;
+  margin-right: 15px;
+  background: #fff;
+}
